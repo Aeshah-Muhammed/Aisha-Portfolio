@@ -293,27 +293,40 @@ color: rgb(9, 54, 56);
 }
 
 .eachproject {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    margin: 40px 0;
+    margin: 40px 0; */
 }
 
 .projectImage {
     height: 70vh;
-    margin-right: 20px;
+    /* margin-right: 20px; */
+
 }
-.projectImage > img{
+.projectImage > a > img{
     height: 100%;
     width: 100%;
+    border-radius: 15px;
+  transition: 0.5s;
+
 }
+.projectImage > a > img:hover {
+    transform: scaleX(1.05);
+    transform: scaley(1.05);
+
+  }
 
 .projectInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 25px 0;
 }
 .projectInfo > h1 {
   color: rgb(9, 54, 56);
+}
+.projectInfo > p {
+    margin: 10px 0;
 }
 
 .btns {
@@ -365,7 +378,7 @@ button::after {
   right: -1px;
    width: 10px;
    height: 10px;
-   border-bottom: 2px solidrgb(9, 54, 56);
+   border-bottom: 2px solid rgb(9, 54, 56);
    border-right: 2px solid rgb(9, 54, 56);
    transition: 0.5s;
    transition-delay: 0.5s;
@@ -476,9 +489,102 @@ footer > p > a {
     }
     .bar {
       display: block;
-  
+    }
+    .bar > img {
+      right: 50px;
+      top: 35px;
+    }
+   .logo {
+
     }
 } 
-@media (max-width:700px) {
-   
+@media (max-width:800px) {
+    .about {
+        height: 120%;
+    }
+    
 }
+@media (max-width:600px) {
+   .static-txt, .dynamic-txts li {
+        font-size: 60px;
+    }
+    .about {
+        height: 140%;
+    }
+    
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;   
+       
+    } 
+}
+@media (max-width:521px) {
+    .about {
+        height: 170%;
+    }
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;   
+    } 
+    
+}
+
+@media (max-width:495px) {
+    .static-txt, .dynamic-txts li {
+        font-size: 55px;
+    }
+    
+}
+@media (max-width:469px) {
+    .static-txt, .dynamic-txts li {
+        font-size: 45px;
+    }
+}
+@media (max-width:432px) {
+   .resume > a > button {
+    font-size: 15px;
+  } 
+}
+@media (max-width:414px) {
+    .about {
+        height: 180%;
+    }
+   
+  }
+  @media (max-width:380px) {
+    .resume > a > button {
+        font-size: 11px;
+      } 
+  }
+  @media (max-width:374px) {
+    .about {
+        height: 190%;
+    }
+   
+  }
+  @media (max-width:338px) {
+    .resume > a > button {
+    padding: 15px;
+      } 
+  }
+  @media (max-width:308px) {
+    .resume > a > button {
+    padding: 10px;
+      } 
+  }
+  @media (max-width:323px) {
+    .about {
+        height: 200%;
+    }
+}
+@media (max-width:303px) {
+    .about {
+        height: 220%;
+    }
+}
+  @media (max-width:298px) {
+    .resume > a > button {
+        font-size: 8px;
+      } 
+  }
