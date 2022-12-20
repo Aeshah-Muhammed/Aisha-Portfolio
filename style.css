@@ -199,7 +199,9 @@ body {
     background-color: rgb(9, 54, 56);
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 110%;
+    /* height: 110%; */
+    height: 150%;
+
 }
 
 .about > h1 {
@@ -300,6 +302,7 @@ color: rgb(9, 54, 56);
 
 .projectImage {
     height: 70vh;
+  
     /* margin-right: 20px; */
 
 }
@@ -501,6 +504,9 @@ footer > p > a {
 @media (max-width:800px) {
     .about {
         height: 120%;
+    }
+    .logo {
+margin-left: -50px;
     }
     
 }
