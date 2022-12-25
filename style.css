@@ -301,7 +301,7 @@ color: rgb(9, 54, 56);
 }
 
 .projectImage {
-    height: 70vh;
+    /* height: 70vh; */
   
     /* margin-right: 20px; */
 
@@ -546,6 +546,11 @@ margin-left: -50px;
     .static-txt, .dynamic-txts li {
         font-size: 45px;
     }
+
+
+   
+
+    
 }
 @media (max-width:432px) {
    .resume > a > button {
